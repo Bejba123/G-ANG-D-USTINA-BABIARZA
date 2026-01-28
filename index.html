@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
@@ -6,36 +6,54 @@
   <title>Ogłoszenia G'ANGU DŻUSTINA BABIARZA</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffe6f0; /* jasnoróżowe tło */
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #222;
+      background-color: #ff4da6; /* mocny różowy */
       color: #fff;
-      padding: 20px;
+      padding: 25px 20px;
       text-align: center;
+      position: relative;
     }
 
-    h1 {
+    header h1 {
       margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    /* serduszka w nagłówku */
+    header::after {
+      content: "❤️ 💖 💕 💓 💗";
+      display: block;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
     }
 
     .container {
       width: 90%;
       max-width: 800px;
-      margin: 20px auto;
-      background-color: #fff;
+      margin: 25px auto;
+      background-color: #fff0f6;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(255, 77, 166, 0.3);
     }
 
     .ogloszenie {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
+      border-bottom: 1px dashed #ff80bf;
+      padding: 15px 0;
     }
 
     .ogloszenie:last-child {
@@ -44,20 +62,31 @@
 
     .ogloszenie h2 {
       margin: 0 0 5px 0;
-      color: #333;
+      color: #ff1a75;
     }
 
     .ogloszenie p {
       margin: 0;
-      color: #555;
+      color: #b30059;
     }
 
     footer {
       text-align: center;
-      padding: 15px;
-      background-color: #222;
+      padding: 20px;
+      background-color: #ff4da6;
       color: #fff;
-      margin-top: 20px;
+      margin-top: 25px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    /* opcjonalnie animowane serduszka w stopce */
+    footer::after {
+      content: "💖💓💕";
+      display: block;
+      font-size: 1rem;
+      margin-top: 5px;
+      animation: pulse 1.5s infinite;
     }
   </style>
 </head>
@@ -67,20 +96,20 @@
   </header>
 
   <div class="container">
+    <!-- tutaj będą ogłoszenia, np.
     <div class="ogloszenie">
+      <h2>Tytuł ogłoszenia</h2>
+      <p>Treść ogłoszenia</p>
     </div>
-
-    <div class="ogloszenie">
-
-    </div>
-
-    <div class="ogloszenie">
-
-    </div>
+    -->
   </div>
 
   <footer>
-    &copy; 2026 G"ANG DŻUSTINA BABIARZA
+    &copy; 2026 G'ANG DŻUSTINA BABIARZA
+  </footer>
+</body>
+</html>
+
   </footer>
 </body>
 </html>
