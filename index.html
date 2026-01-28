@@ -1,32 +1,30 @@
-    <!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ogłoszenia G'ANGU DŻUSTINA BABIARZA</title>
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffe6f0; /* jasnoróżowe tło */
+      background-color: #ffe6f0;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #ff4da6; /* mocny różowy */
+      background-color: #ff4da6;
       color: #fff;
       padding: 25px 20px;
       text-align: center;
-      position: relative;
     }
 
     header h1 {
       margin: 0;
       font-size: 2rem;
-      letter-spacing: 1px;
     }
 
-    /* serduszka w nagłówku */
 
     }
 
@@ -40,23 +38,20 @@
       width: 90%;
       max-width: 800px;
       margin: 25px auto;
-      background-color: #fff0f6;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0px 4px 15px rgba(255, 77, 166, 0.3);
     }
 
+    /* OKIENKO OGŁOSZENIA */
     .ogloszenie {
-      border-bottom: 1px dashed #ff80bf;
-      padding: 15px 0;
-    }
-
-    .ogloszenie:last-child {
-      border-bottom: none;
+      background-color: #fff0f6;
+      border-radius: 15px;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(255, 77, 166, 0.3);
+      animation: fadeIn 0.5s ease;
     }
 
     .ogloszenie h2 {
-      margin: 0 0 5px 0;
+      margin: 0 0 8px 0;
       color: #ff1a75;
     }
 
@@ -65,38 +60,54 @@
       color: #b30059;
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #ff4da6;
       color: #fff;
-      margin-top: 25px;
+      margin-top: 30px;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
     }
-
-    }\
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Ogłoszenia G'ANGU DŻUSTINA BABIARZA</h1>
   </header>
 
   <div class="container">
 
+    <!-- OKIENKO OGŁOSZENIA -->
     <div class="ogloszenie">
-      <!--<h2>Spotkanie Gangu</h2>
-      <p>Dnia Apt.Apt.Apt będzie spotkanie pod tym adresem Apt apt-apt apt, apt,apt</p>
+      <h2>Spotkanie Gangu</h2>
+      <p>
+        Dnia <b>APT.APT.APT</b> odbędzie się spotkanie pod adresem:<br>
+        <i>apt apt-apt apt, apt, apt</i>
+      </p>
     </div>
-  </div>
--->
-  <footer>
-    &copy; 2026 G'ANG DŻUSTINA BABIARZA | Page Created By Damian Kwapic the Director of NerRiverStudio
-  </footer>
-</body>
-</html>
 
+    <!-- TU DODAJESZ KOLEJNE OGŁOSZENIA -->
+    <!--
+    <div class="ogloszenie">
+      <h2>Tytuł</h2>
+      <p>Treść ogłoszenia</p>
+    </div>
+    -->
+
+  </div>
+
+  <footer>
+    &copy; 2026 G'ANG DŻUSTINA BABIARZA <br>
+    Page Created By Damian Kwapic – Director of NerRiverStudio
   </footer>
+
 </body>
 </html>
